@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em to Px Converter - Nzenwata Christopher</title>
+    <link rel="stylesheet" href="./assets/scss/css/main.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <form class="inputContainer" onclick="handleSubmit(event)">
+                <input type="number" id="pxInput" placeholder="Enter value in px">
+                <button id="submit" type="submit">Convert</button> <!--needs to have tyoe submit-->
+            </form>
+            <p>Your value is: <span id="displayResult">___</span> em</p>
+            <p id="errorMessage"></p>
+        </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

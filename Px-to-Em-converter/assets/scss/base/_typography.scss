@@ -1,0 +1,58 @@
+//abstracts
+@use '../abstracts/colors' as col;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Space Grotesk Local';
+  src: url('/assets/scss/css/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+html{
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+
+
+    body {
+        background-color: col.$black;
+        color: col.$white;
+        font-family: 'Space Grotesk Local', 'Space Grotesk', sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        min-height: 100vh;
+
+        ul,li{
+          list-style-type: none;
+        }
+
+        a{
+          text-decoration: none;
+          color: col.$white;
+        }
+
+        input,textarea,button{
+          font-size: 1em;
+          padding: 0.8em 1em;
+          border-radius: 0px !important;
+          border: 1px solid;
+          outline: 0px;
+
+          &::placeholder{
+            font-family: 'Space Grotesk Local', 'Space Grotesk', sans-serif;
+            font-size: 1em;
+          }
+        }
+
+        button{
+          font-family: 'Space Grotesk Local', 'Space Grotesk', sans-serif;
+          font-size: 1em;
+        }
+
+    }
+}
+
+

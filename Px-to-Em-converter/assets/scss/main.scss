@@ -1,0 +1,72 @@
+//abstracts
+@use './abstracts/colors' as col;
+
+//base
+@use './base/reset' as reset;
+@use './base/typography' as typo;
+
+//layout
+@use './layout/containers' as contain;
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        background-color: col.$black;
+        border: 1px solid col.$white;
+        padding: 3em;
+        height: auto;
+        transition: all 0.3s ease-in;
+
+        .inputContainer{
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            min-width: 100%;
+
+            input{
+                min-width: 100%;
+                background-color: transparent;
+                border: 1px solid col.$white;
+                color: col.$white;
+                transition: all 0.2s;
+
+                &:focus{
+                    border-color: col.$primary-color;
+                }
+            }
+
+            button{
+                background-color: col.$white;
+                color: col.$black;
+                cursor: pointer;
+                font-weight: 500;
+                transition: all 0.2s;
+
+                &:hover{
+                    background-color: col.$primary-color;
+                    color: col.$black;
+                    border-color: col.$black;
+                }
+            }
+        }
+
+        
+        #displayResult{
+            color: col.$primary-color;
+        }
+
+        #errorMessage{
+            color: col.$red;
+            display: none;
+        }
+    }
+}

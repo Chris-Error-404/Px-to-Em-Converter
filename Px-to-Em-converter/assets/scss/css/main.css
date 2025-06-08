@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Space Grotesk Local";
+  src: url("/assets/scss/css/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+html body {
+  background-color: #000;
+  color: #fff;
+  font-family: "Space Grotesk Local", "Space Grotesk", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+html body ul, html body li {
+  list-style-type: none;
+}
+html body a {
+  text-decoration: none;
+  color: #fff;
+}
+html body input, html body textarea, html body button {
+  font-size: 1em;
+  padding: 0.8em 1em;
+  border-radius: 0px !important;
+  border: 1px solid;
+  outline: 0px;
+}
+html body input::placeholder, html body textarea::placeholder, html body button::placeholder {
+  font-family: "Space Grotesk Local", "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+html body button {
+  font-family: "Space Grotesk Local", "Space Grotesk", sans-serif;
+  font-size: 1em;
+}
+
+.container {
+  min-width: 500px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  background-color: #000;
+  border: 1px solid #fff;
+  padding: 3em;
+  height: auto;
+  transition: all 0.3s ease-in;
+}
+section .container .inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 100%;
+}
+section .container .inputContainer input {
+  min-width: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.2s;
+}
+section .container .inputContainer input:focus {
+  border-color: #89ef0b;
+}
+section .container .inputContainer button {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+section .container .inputContainer button:hover {
+  background-color: #89ef0b;
+  color: #000;
+  border-color: #000;
+}
+section .container #displayResult {
+  color: #89ef0b;
+}
+section .container #errorMessage {
+  color: rgb(255, 44, 44);
+  display: none;
+}
+
+/*# sourceMappingURL=main.css.map */
