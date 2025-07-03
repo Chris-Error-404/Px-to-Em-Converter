@@ -1,5 +1,5 @@
-# No need for a readme 
+# No need for a Readme 
 
-> But if a simple script that just divides the number you give it
+> But it's a simple script that just divides the number you give it
 > it takes it as a px value
 > Does the calculation inputPX/16 = outputEM
